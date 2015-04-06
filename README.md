@@ -56,9 +56,9 @@ A zip file or an invitation to a source code repository we may access (BitBucket
 * Accept your invitation link to Salsify (it will be provided)
 * Upload the product sample data provided (`product_data.csv` in this repository)
 * Write code to:
-** Download the product data as Salsify sees it using the ephemeral export API
-** Upload images for products in the export to get publically accessible urls (sample simples in `assets.zip` in this repository)
-** Attach those images to products in Salsify by importing the public asset urls.
+  * Download the product data as Salsify sees it using the ephemeral export API
+  * Upload images for products in the export to get publically accessible urls (sample simples in `assets.zip` in this repository)
+  * Attach those images to products in Salsify by importing the public asset urls.
 
 # What you’ll be judged on
 
