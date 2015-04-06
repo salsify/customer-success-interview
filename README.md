@@ -2,7 +2,7 @@
 
 Many of Salsify’s customers come to Salsify with lots of various data in lots of various data sources. These sources might be digital assets (manuals, product images, color swatches, etc) stored in a digital asset management system (best), a shared drive (better), or on a particular employee’s laptop (worse), or they may be product information stored in an enterprise resource planner, an Excel spreadsheet, or a series of PDF files, among other sources and systems.
 
-Consequently a lot of what we do in Customer Success Engineering is helping customers integrate with existing business systems (and/or business processes). Which brings us to this exercise.
+Consequently some of the work we do in Customer Success Engineering is helping customers integrate with existing business systems (and/or business processes). Which brings us to this exercise.
 
 In this exercise you’ll build code/an integration to upload digital assets to a customer Salsify account. As part of it you’ll learn to upload product data into Salsify, how to work with Salsify’s APIs, and how to handle an integration of asset data with products in Salsify.
 
