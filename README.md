@@ -19,7 +19,7 @@ Products have an associated external identifier, or ‘sku’. Images are named 
 3.  
 Images without a sku prefix, or with a sku that isn’t found shouldn’t be uploaded.
 
-You are free to use whatever language and framework you would like, however, we use Ruby (on Rails), Scala, and Javascript primarily at Salsify.
+You are free to use whatever language and framework you would like, however, we primarily use Ruby (on Rails), Scala, and Javascript.
 
 # Salsify API Documentation
 Go here: http://help.salsify.com/category/56-category
@@ -49,15 +49,16 @@ A zip file or an invitation to a source code repository we may access (BitBucket
 
 * Salsify doesn’t have an exposed direct image upload API. You can import and export data, but image files can’t directly be uploaded via a public API. In order to upload images in bulk you must upload a CSV or Excel file with publically accessible URLs of images assigned to products (see the sample .csv file).
 * To get publically accessible URLs for images some service must be used. We recommend Amazon S3 (which has a great Ruby API), and you can get a free account here: https://aws.amazon.com/free/
-* Imports in Salsify overwrite existing data. If you need to clear all the data in the account you can click on your name in the top right, go to Organization, then Data, and click on 'Clear All Data'
+* Imports in Salsify overwrite existing data (for properties specified in the import file). If you need to clear all the data in the account however, you can click on your name in the top right, go to Organization, then Data, and click on 'Clear All Data'
 
 # General suggested approach
 
-* Accept your invitation link
-* Upload the product sample data provided (product_data.csv)
-* Download the product data as Salsify sees it.
-* Write code to perform the upload
-* Iterate…
+* Accept your invitation link to Salsify (it will be provided)
+* Upload the product sample data provided (`product_data.csv` in this repository)
+* Write code to:
+** Download the product data as Salsify sees it using the ephemeral export API
+** Upload images for products in the export to get publically accessible urls (sample simples in `assets.zip` in this repository)
+** Attach those images to products in Salsify by importing the public asset urls.
 
 # What you’ll be judged on
 
