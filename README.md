@@ -54,7 +54,7 @@ A zip file or an invitation to a source code repository we may access (BitBucket
 # General suggested approach
 
 * Accept your invitation link to Salsify (it will be provided)
-* Upload the product sample data provided (`product_data.csv` in this repository)
+* Checkout the product and the sample data provided (`product_data.csv` in this repository; it will already be imported into the account)
 * Write code to:
   * Download the product data as Salsify sees it using the ephemeral export API
   * Upload images for products in the export to get publically accessible urls (sample simples in `assets.zip` in this repository)
