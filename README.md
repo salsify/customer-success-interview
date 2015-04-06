@@ -12,11 +12,11 @@ Your code should, given a set of products and a library of digital assets:
 * Determine what products are in the system
 * Determine what assets are available in the library (we’re providing you with a ZIP file)
 * Upload the assets that match the product name to the product in the system
-* 
+
 Products have an associated external identifier, or ‘sku’. Images are named after this ‘sku’, like so:
-1.  `sku`_Primary.jpg is the primary image for the product identified by `sku`
-2.  `sku`_LeftSideView.jpg is the Left side view image for the product identified by `sku`
-3.  
+* `sku`_Primary.jpg is the primary image for the product identified by `sku`
+* `sku`_LeftSideView.jpg is the Left side view image for the product identified by `sku`
+  
 Images without a sku prefix, or with a sku that isn’t found shouldn’t be uploaded.
 
 You are free to use whatever language and framework you would like, however, we primarily use Ruby (on Rails), Scala, and Javascript.
